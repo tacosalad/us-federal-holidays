@@ -1,5 +1,5 @@
-const dayjs = require("dayjs");
-const utcPlugin = require("dayjs/plugin/utc");
+import dayjs from "dayjs";
+import utcPlugin from "dayjs/plugin/utc.js";
 
 dayjs.extend(utcPlugin);
 
@@ -147,7 +147,7 @@ const allFederalHolidaysForYear = (
   });
 };
 
-const isAHoliday = (
+export const isAHoliday = (
   date = new Date(),
   { shiftSaturdayHolidays = true, shiftSundayHolidays = true, utc = false } = {}
 ) => {
@@ -175,7 +175,7 @@ const getOneYearFromNow = () => {
   return future;
 };
 
-const federalHolidaysInRange = (
+export const inRange = (
   startDate = new Date(),
   endDate = getOneYearFromNow(),
   options = undefined
@@ -190,8 +190,4 @@ const federalHolidaysInRange = (
   return candidates.filter(h => h.date >= startDate && h.date <= endDate);
 };
 
-module.exports = {
-  isAHoliday,
-  allForYear: allFederalHolidaysForYear,
-  inRange: federalHolidaysInRange
-};
+export { allFederalHolidaysForYear as allForYear };

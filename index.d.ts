@@ -26,6 +26,7 @@ interface WithUTCDate {
 
 export interface Holiday {
     name: string;
+    alsoObservedAs?: string;
     date: Date;
     dateString: string;
 }

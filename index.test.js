@@ -1,6 +1,6 @@
-const customParseFormat = require("dayjs/plugin/customParseFormat");
-const dayjs = require("dayjs");
-const tap = require("tap");
+import customParseFormat from "dayjs/plugin/customParseFormat.js";
+import dayjs from "dayjs";
+import tap from "tap";
 
 // The customParseFormat plugin changes the way the dayjs() utility method
 // handles format strings. Specifically, MM and DD format tokens will REQUIRE
@@ -9,7 +9,7 @@ const tap = require("tap");
 // still work in environments where the plugin is being used.
 dayjs.extend(customParseFormat);
 
-const federalHolidays = require("./index");
+import * as federalHolidays from "./index.js";
 
 const getDate = dateString => new Date(`${dateString} 00:00:00`);
 
