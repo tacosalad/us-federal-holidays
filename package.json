@@ -1,6 +1,6 @@
 {
   "name": "rmazocar-us-federal-holidays",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "All about US federal holidays (ESM fork)",
   "type": "module",
   "main": "index.js",
