@@ -1,5 +1,5 @@
-import dayjs from "dayjs";
-import utcPlugin from "dayjs/plugin/utc.js";
+import dayjs from "rmazocar-dayjs";
+import utcPlugin from "rmazocar-dayjs/plugin/utc";
 
 dayjs.extend(utcPlugin);
 

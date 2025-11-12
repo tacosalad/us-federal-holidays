@@ -1,5 +1,5 @@
-import customParseFormat from "dayjs/plugin/customParseFormat.js";
-import dayjs from "dayjs";
+import customParseFormat from "rmazocar-dayjs/plugin/customParseFormat";
+import dayjs from "rmazocar-dayjs";
 import tap from "tap";
 
 // The customParseFormat plugin changes the way the dayjs() utility method

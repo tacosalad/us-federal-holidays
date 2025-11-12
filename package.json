@@ -43,7 +43,7 @@
     "tap": "^18.5.0"
   },
   "dependencies": {
-    "dayjs": "^1.11.13"
+    "rmazocar-dayjs": "^1.0.0"
   },
   "prettier": {
     "trailingComma": "none",
